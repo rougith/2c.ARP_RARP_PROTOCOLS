@@ -75,13 +75,14 @@ import socket
 s=socket.socket()
 s.connect(('localhost',8000))
 while True:
-    ip=input("Enter logical Address : ")
+    ip=input("Enter MAC Address : ")
     s.send(ip.encode())
-    print("MAC Address",s.recv(1024).decode())
+    print("Logical Address",s.recv(1024).decode())
 
 ```
 ## OUPUT -RARP
-<img width="1773" height="257" alt="{3906F5C6-4012-4775-8452-81A03C61557E}" src="https://github.com/user-attachments/assets/9be1f8c0-004c-4a9d-b54d-9b45148c967d" />
+<img width="1691" height="259" alt="{DA5711DF-B3A2-44FA-9922-B378CD61C7D5}" src="https://github.com/user-attachments/assets/41170d68-d3a7-4048-aff2-b0627b88e44b" />
+
 
 ## RESULT
 Thus, the python program for simulating ARP protocols using TCP was successfully 
